@@ -21,6 +21,7 @@ namespace MvcGoSandbox.Web.Controllers
                     State = state,
                     Zip = zip
                 };
+            repo.Save(user);
             return RedirectToAction("Index");
         }
     }
